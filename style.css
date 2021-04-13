@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+:root {
+    --primaryColor: #25235b;
+    --secondaryColor: #ee666c;  /*rgb(238, 102, 108)*/
+    --tertiaryColor: #69c5d7;
+    --black: #212529;
+    --lightGray: #f3f3f2;
+    --white: #fff;
+    --fontSize: 16px;
+    --fontFamily: 'Poppins', sans-serif;
+    --transition: .5s ease;
+    --boxShadow: 0 0 20px gray;
+}
+
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+}
+
+hr {
+    display: block;
+    content: "";
+    background: rgba(238, 102, 108, .5);
+    width: 100%;
+    height: 1px;
+}
+/***********nav i header************/
+header {
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(./img/header3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+nav.fixed-top .navbar-brand img {
+    width: 60%;
+    height: 60%;
+}
+
+nav.fixed-top .nav-link:hover {
+    color: var(--white) !important;
+}
+.fixed-top {
+    background: rgb(238, 102, 108, .8) ;
+    box-shadow: 0 0 5px var(--black);
+}
+
+header .nav-link {
+    color: var(--white) !important;
+}
+
+header .nav-link:hover {
+    color: var(--secondaryColor) !important;
+}
+
+header .headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+header .headings h1 {
+    color: var(--white);
+    padding: 15px 30px;
+    background: rgba(238, 102, 108, .8);
+}
+/***********naslov************/
+.naslov {
+    background: var(--primaryColor);
+    padding: 40px;
+    margin-top: -200px;
+}
+
+.naslov h1 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 0 0 5px var(--secondaryColor);
+    margin-top: -150px;
+}
+
+.naslov h3 {
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    
+}
+
+.naslov p {
+    color: var(--white);
+}
+
+/***********usluge************/
+.usluge .row .col div {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.usluge .row .col h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.usluge .row .col:nth-child(1) div:nth-child(1) {
+    background: var(--secondaryColor);
+    color: var(--white);
+}
+.usluge .row .col:nth-child(1) div:nth-child(2) {
+    background: var(--lightGray);
+}
+
+.usluge .row .col:nth-child(2) div:nth-child(1) {
+    background: var(--primaryColor);
+    color: var(--white);
+}
+.usluge .row .col:nth-child(2) div:nth-child(2) {
+    background: var(--secondaryColor);
+    color: var(--white);
+}
+
+.usluge .row .col:nth-child(3) div:nth-child(1) {
+    background: var(--lightGray);
+}
+.usluge .row .col:nth-child(3) div:nth-child(2) {
+    background: var(--primaryColor);
+    color: var(--white);
+}
+
+.usluge .row .col:nth-child(2) {
+    margin-top: 100px;
+}
+
+.usluge .col:nth-child(3) {
+    margin-top: 200px;
+}
+
+/***********about************/
+.about {
+    background-image: url(./img/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about .row {
+    margin-bottom: 50px;
+}
+
+.about .row div:nth-child(1) img {
+    margin-top: 50px;
+}
+
+.about .row div:nth-child(2) .carousel {
+    margin-top: 150px;
+    background: var(--secondaryColor);
+    padding: 50px;
+    color: var(--white);
+}
+
+.about .row div:nth-child(2) .carousel .carousel-item {
+    padding: 0 50px;
+}
+
+.about .row:nth-child(2) div:nth-child(2) h2 {
+    transform: rotate(-90deg);
+    font-size: 6rem;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+/***********footer************/
+footer {
+    background-image: url(./img/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+footer img {
+    width: 150px;
+    height: 150px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2rem;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+/***********how do we work************/
+
+.services {
+    padding: 50px 0;
+}
+
+.services h2 {
+    transform: rotate(-90deg);
+    font-size: 6rem;
+    font-weight: 600;
+    
+}
+
+.services .row article:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services h4 {
+text-transform: uppercase;
+font-weight: 600;
+}
+
+/***********kursevi************/
+.kursevi {
+    padding: 50px 0;
+}
+
+.kursevi .card {
+    border: none;
+}
+
+.kursevi .btn {
+    background: var(--secondaryColor) !important;
+    border: none;
+    text-transform: uppercase;
+}
+
+/***********blog post************/
+.blogPost {
+    padding: 50px 0;
+}
+
+.blogPost .card {
+    border: none;
+}
+
+.blogPost .hrLine {
+    display: block;
+    content: "";
+    background: rgba(238, 102, 108, .5);
+    width: 20%;
+    height: 2px;
+    margin-bottom: 20px;
+}
